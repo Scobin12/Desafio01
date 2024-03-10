@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Proxima Nova;
+}
+
+body{
+    height: auto;
+    width: auto;
+    margin: 50px 0;
+
+    display: block;
+    align-items: center;
+
+    background-color: #EBEBEB;
+}
+
+.barraPesquisa{
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra{
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #FFF;
+    border-radius: 10px;
+    outline: solid #005AAA 2px;
+}
+
+input{
+    height: 40px;
+    width: 100%;
+    padding: 5px 30px;
+    border-radius: 10px 0px 0px 10px;
+
+    background-color: #FFF;
+    border: none;
+    outline: none;
+
+    font-size: 20px;
+}
+
+.btBusca{
+    cursor: pointer;
+
+    margin-right: 5px;
+
+    background: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btBusca img{
+    height: 28px;
+    width: 28px;
+    margin-right: 20px;
+}
+
+.listaProdutos{
+    gap: 3%;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto; 
+}
+
+@media (max-width: 680px ) {
+    .barra{
+        width: 70%;
+    }
+
+    .listaProdutos {
+        gap: 1%;
+
+        grid-template-columns: auto; 
+    }
+
+
+}
+
+@media (min-width: 680px) and (max-width: 1360px) {
+    .barra{
+        width: 70%;
+    }
+
+    .listaProdutos {
+        gap: 2%;
+        grid-template-columns: auto auto; 
+    }
+}
+
+.cards{
+    width: 260px;
+    height: 400px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFF;
+    border-radius: 15px;
+
+    box-shadow: #000000 1px 0 10px;
+}
+
+.cards:hover{
+    cursor: pointer;
+    width: 270px;
+    height: 410px;
+    margin: -5px;
+
+    box-shadow: #005AAA 1px 0 10px;
+
+    transition-delay: 0.1s;
+}
+
+.escrita{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 200px;
+    height: auto;
+
+    text-align: center;
+}
+
+h4{
+    padding: 20px 0px;
+
+    color: #005AAA;
+    font-size: 25px;
+}
+
+.valor{
+
+    font-size: 30px;
+
+    font-weight: 10000;
+    color: #000000;
+}
+
+.descricao{  
+    display: flex;
+    align-items: center;
+    
+    height: 60px;
+    padding: 10px 0px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+.listaProdutos img{
+    padding: 10px;
+
+    object-fit: cover;
+
+    max-width: 280px;
+    max-height: 200px;
+
+    border-radius: 20px;
+}
